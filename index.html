@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <title>阿三蔬果-01</title>
+  </head>
+  <body>
+    <div class="container">
+      <div style="float:left">
+        <a href="index.html"><img width=" 310px"src="images/asan_index_03.jpg" alt="asan_index_03.jpg"></a>
+      </div>
+
+      <div id="navBarCollapse" style="">
+
+        <ul>
+          <li><a href="01about.html">關於阿三</a></li>
+          <li><a href="02service.html">服務資訊</a></li>
+          <li><a href="#">競爭優勢</a>
+            <ul style="position:absolute">
+              <li style="background-color:#ffe680"><a href="03competition.html">競爭優勢</a></li>
+              <li style="background-color:#ff471a"><a href="04backup.html">資管後勤</a></li>
+              <li style="background-color:#66d9ff"><a href="05package.html">包裝作業</a></li>
+              <li style="background-color:#d966ff"><a href="06logistics.html">物流服務</a></li>
+              <li style="background-color:orange"><a href="07cut.html">代客裁切</a></li>
+            </ul>
+          </li>
+          <li><a href="02service.html">聯絡資訊</a>
+          <li><a href="08food.html">食材辨識</a>
+          <li><a href="09message.html">線上留言</a>
+          <li><a href="10link.html">友善連結</a>
+        </ul>
+      </div>
+      <div id="mainPage">
+        <div class="">
+          <img class="theme" width="100%" height="auto" src="images/asan_index_17.jpg" alt="asan_index_17.jpg">
+        </div>
+        <div>
+          <textarea id="readmore" placeholder="最新活動與優惠資訊" ></textarea>
+          <img id="img-2" src="images/asan_index_24.jpg" alt="asan_index_24.jpg">
+        </div>
+
+        <footer>
+          <img width="780px;" src="images/asan_index_30.jpg" alt="asan_index_30.jpg">
+          <div class="footer-img">
+            <a><img height="40px;"src="images/asan_index_31.jpg" alt="asan_index_31.jpg"></a>
+            <a><img height="40px;"src="images/asan_index_33.jpg" alt="asan_index_33.jpg"></a>
+          </div>
+        </footer>
+
+
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+     $(document).ready(function() {
+      $("#mainPage").css('display', 'none');
+      $('#mainPage').fadeIn(1000); //一開始淡入
+      $('a.link').click(function(event) { //點選 class 為 link 的 a 元件時觸發
+       event.preventDefault(); //取消事件預設動作
+       newLocation = this.href;
+       $('body').fadeOut(1000, newpage); //點選後淡出
+      });
+
+      function newpage() {
+       window.location = newLocation;
+      }
+     });
+    </script>
+  </body>
+</html>
